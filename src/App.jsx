@@ -7,18 +7,17 @@ import Blog from "./components/Blog"
 import Contact from "./components/Contact"
 
 
-
 function App() {
 
-  return(
+  return (
     <>
-    <Header/>
-    <BannerArea/>
-    <About/>
-    <Gallery/>
-    <Blog/>
-    <Contact/>
-    <Footer/>
+      <Header />
+      <BannerArea />
+      <About />
+      <Gallery />
+      <Blog />
+      <Contact />
+      <Footer />
     </>
   )
 }
