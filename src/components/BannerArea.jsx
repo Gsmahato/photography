@@ -32,7 +32,7 @@ function BannerArea() {
               alt={`Banner ${index + 1}`}
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50 pt-24 md:pt-[450px] md:pl-[600px] md:pr-48 sm:pt-48">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/20 bg-opacity-50 pt-24 md:pt-[450px] md:pl-[600px] md:pr-48 sm:pt-48">
               <h2 className="text-white text-2xl md:text-4xl font-bold mb-4 uppercase">wildlife photography</h2>
               <p className="text-white text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
