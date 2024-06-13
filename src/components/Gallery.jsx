@@ -37,21 +37,21 @@ function Gallery() {
                         <p className='text-base md:text-lg text-white/60'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <LightGallery
-                        onInit={onInit}
-                        speed={500}
-                        plugins={[lgThumbnail, lgZoom]}
-                        download={false}
-                        zoom={false}
-                    >
+                <LightGallery
+                    onInit={onInit}
+                    speed={500}
+                    plugins={[lgThumbnail, lgZoom]}
+                    download={false}
+                    zoom={false}
+                >
+                    <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
                         {[p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16].map((image, index) => (
-                            <a href={image} key={index} className="block mb-4">
+                            <a href={image} key={index} className="block break-inside-avoid">
                                 <img alt={`img${index + 1}`} src={image} className="w-full h-auto object-cover" />
                             </a>
                         ))}
-                    </LightGallery>
-                </div>
+                    </div>
+                </LightGallery>
             </div>
         </div>
     );
